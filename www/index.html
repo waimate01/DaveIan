@@ -24,7 +24,7 @@
  
  
 <body onload="BodyLoaded()">
-<button onclick="reload()"> RELOAD</button>
+<button id=MyReload onclick="reload()"> RELOAD</button>
  <br>
 
  <div id=MyMainDiv> 
@@ -44,7 +44,7 @@ function reload() {
 	el=document.createElement("IFRAME");
 	MyMainDiv.removeChild(MyMainDiv.querySelector("#MyIframe"));
 	el.id="MyIframe";
-	el.onload="FrameLoaded()"
+	el.onload= FrameLoaded;
 	MyMainDiv.appendChild(el);
 	
 	fetch(isrc)
