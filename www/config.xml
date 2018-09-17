@@ -5,7 +5,7 @@
         id        = "com.davies2.daveian"
 		xmlns:cdv="http://cordova.apache.org/ns/1.0"
 		xmlns:android="http://schemas.android.com/apk/res/android"
-        version   = "0.0.1">
+        version   = "0.0.2">
 
 	<edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
 		<activity android:configChanges="orientation|keyboardHidden" android:windowSoftInputMode="adjustPan" />
@@ -38,16 +38,11 @@
 	<preference name="SplashScreen" 			  value="splash" />
 	
 	
-    <plugin name="cordova-plugin-camera" />  
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-splashscreen" />
     <plugin name="cordova-plugin-battery-status" />  
-    <plugin name="cordova-plugin-geolocation" />
-    <plugin name="cordova-plugin-vibration" />
     <plugin name="cordova-plugin-statusbar" />
 	<plugin name="cordova-plugin-whitelist" />
-	<plugin name="cordova-plugin-file" />
-	<plugin name="cordova-plugin-inappbrowser"  />	
 	<plugin name="cordova-plugin-android-permissions" source="npm" version="0.10.0" />
 	
 
@@ -59,10 +54,6 @@
 		<string>100</string>
     </gap:config-file>
 
-	<feature name="IntentAndNavigationFilter">
-		<param name="ios-package" value="CDVIntentAndNavigationFilter"/>
-		<param name="onload" value="true"/>
-	</feature>	
 
     <access origin="*" />
 	<allow-navigation href="*" />
